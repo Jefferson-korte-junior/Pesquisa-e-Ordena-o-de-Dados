@@ -81,3 +81,89 @@ O projeto permitiu compreender, de forma prática, o funcionamento da ordenaçã
 
 Curso de Ciência da Computação – UTFPR  
 Campus Santa Helena – PR
+
+
+
+
+
+
+# PROJETO 2 -  Simulação de Memória Secundária utilizando Árvore B em C
+
+Este repositório contém o **Projeto 2 da disciplina de Pesquisa e Ordenação de Dados**, desenvolvido no curso de **Ciência da Computação da UTFPR – Campus Santa Helena**.
+
+O projeto tem como objetivo simular o funcionamento de uma **memória secundária (disco)** utilizando a estrutura de dados **Árvore B**, devido à sua semelhança com o modelo de acesso por blocos utilizado em sistemas reais.
+
+---
+
+## Objetivo do Projeto
+Simular o gerenciamento de memória secundária por meio de uma **Árvore B**, implementando operações de **inserção** e **busca**, com controle e monitoramento das operações de leitura e escrita em disco.
+
+O projeto busca demonstrar, na prática, como estruturas de dados são utilizadas para organizar e acessar grandes volumes de dados de forma eficiente.
+
+---
+
+## Fundamentação
+A Árvore B é amplamente utilizada em **sistemas de arquivos** e **sistemas gerenciadores de banco de dados (SGBDs)**, pois mantém a árvore sempre balanceada e reduz a quantidade de acessos ao disco.
+
+Neste trabalho, a Árvore B foi utilizada para:
+- Representar páginas (blocos) da memória secundária
+- Reduzir a altura da estrutura
+- Minimizar o número de operações de leitura e escrita simuladas
+
+---
+
+## Metodologia e Implementação
+O projeto foi implementado em **linguagem C**, sendo dividido em três módulos principais:
+
+### 1 - Implementação da Árvore B
+- Criação da estrutura da árvore e dos nós
+- Operações de inserção com tratamento de overflow (split)
+- Operação de busca recursiva
+- Impressão hierárquica da árvore
+
+### 2️ - Simulação de Disco
+- Representação da memória secundária por meio de um vetor de páginas
+- Funções para simular leitura e escrita em disco
+- Contadores para registrar operações de I/O (leitura e escrita)
+
+### 3️ - Entrada e Saída de Dados
+- Interface de linha de comando
+- Comandos como `INSERT` e `SEARCH`
+- Registro das operações em arquivo de texto
+
+---
+
+## Resultados
+A simulação apresentou resultados satisfatórios, com:
+- Execução correta das operações de inserção e busca
+- Controle preciso das operações de leitura e escrita
+- Redução do número de acessos ao disco devido ao balanceamento da Árvore B
+
+Os resultados confirmam a eficiência da Árvore B para organização de dados em memória secundária simulada.
+
+---
+
+## Conclusão
+O projeto atingiu seu objetivo ao simular de forma eficiente uma memória secundária utilizando Árvore B.  
+A implementação permitiu compreender o impacto da organização dos dados na redução de latência e no desempenho das operações de busca e inserção.
+
+---
+
+## Tecnologias Utilizadas
+- Linguagem C
+- Estrutura de dados Árvore B
+- Manipulação de arquivos
+- Simulação de memória secundária
+- Conceitos de gerenciamento de I/O
+
+---
+
+## Autores
+- Caio Macedo Lima da Cruz  
+- José Carlos Seben de Souza Leite  
+- Igor Carvalho Marchi  
+- Jefferson Korte Júnior  
+
+Curso de Ciência da Computação – UTFPR  
+Campus Santa Helena – PR
+
